@@ -280,8 +280,7 @@ s.waitForBoot({
         },
     '/master/gain');
 
-    // Set fixed reverb parameters
-    // These can be adjusted manually in the code instead of via OSC
+    // These should be adjusted manually in the code 
     ~hoa_output.set(\dry_wet_mix, 0.2);
     ~reverb_processor.set(\room, 0.8);
     ~reverb_processor.set(\damp, 0.5);
